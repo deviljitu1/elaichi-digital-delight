@@ -48,12 +48,13 @@ const About = () => {
             return (
               <div
                 key={index}
-                className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]"
+                className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)] hover-lift"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4 group-hover:scale-110 transition-[var(--transition-smooth)]">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-[var(--transition-smooth)]">
                   <Icon className="w-7 h-7 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{feature.title}</h3>
                 <p className="text-muted-foreground">{feature.description}</p>
               </div>
             );

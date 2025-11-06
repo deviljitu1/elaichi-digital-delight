@@ -16,9 +16,9 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div className="space-y-8">
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
+          <div className="space-y-8 animate-slide-in-right">
+            <div className="flex gap-4 group cursor-pointer hover-lift">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                 <MapPin className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
@@ -33,30 +33,30 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
+            <a href="tel:+917712345678" className="flex gap-4 group hover-lift">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                 <Phone className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-semibold text-xl mb-2">Phone</h3>
-                <p className="text-muted-foreground">+91 771 234 5678</p>
+                <h3 className="font-semibold text-xl mb-2 group-hover:text-primary transition-colors">Phone</h3>
+                <p className="text-muted-foreground group-hover:text-primary transition-colors">+91 771 234 5678</p>
                 <p className="text-muted-foreground">+91 771 234 5679</p>
               </div>
-            </div>
+            </a>
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
+            <a href="mailto:info@elaichiraipur.com" className="flex gap-4 group hover-lift">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                 <Mail className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-semibold text-xl mb-2">Email</h3>
-                <p className="text-muted-foreground">info@elaichiraipur.com</p>
+                <h3 className="font-semibold text-xl mb-2 group-hover:text-primary transition-colors">Email</h3>
+                <p className="text-muted-foreground group-hover:text-primary transition-colors">info@elaichiraipur.com</p>
                 <p className="text-muted-foreground">reservations@elaichiraipur.com</p>
               </div>
-            </div>
+            </a>
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
+            <div className="flex gap-4 group hover-lift cursor-default">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                 <Clock className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
@@ -67,10 +67,12 @@ const Contact = () => {
             </div>
 
             <div className="pt-4">
-              <Button variant="hero" size="lg" className="w-full sm:w-auto">
-                <Phone className="w-5 h-5" />
-                Call to Reserve
-              </Button>
+              <a href="tel:+917712345678">
+                <Button variant="hero" size="lg" className="w-full sm:w-auto hover-scale">
+                  <Phone className="w-5 h-5" />
+                  Call to Reserve
+                </Button>
+              </a>
             </div>
           </div>
 

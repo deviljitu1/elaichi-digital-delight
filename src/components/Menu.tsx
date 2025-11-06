@@ -54,7 +54,8 @@ const Menu = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {categories.map((category, idx) => (
-            <div key={idx} className="bg-card rounded-2xl p-8 border border-border shadow-sm hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]">
+            <div key={idx} className="bg-card rounded-2xl p-8 border border-border shadow-sm hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)] hover-lift"
+              style={{ animationDelay: `${idx * 0.15}s` }}>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                   <UtensilsCrossed className="w-5 h-5 text-primary-foreground" />
@@ -64,10 +65,10 @@ const Menu = () => {
 
               <div className="space-y-6">
                 {category.items.map((item, itemIdx) => (
-                  <div key={itemIdx} className="border-b border-border/50 pb-4 last:border-0 last:pb-0">
+                  <div key={itemIdx} className="border-b border-border/50 pb-4 last:border-0 last:pb-0 group/item hover:bg-muted/30 -mx-4 px-4 py-2 rounded-lg transition-all">
                     <div className="flex justify-between items-start mb-2">
-                      <h4 className="font-semibold text-lg">{item.name}</h4>
-                      <span className="text-primary font-bold text-lg">{item.price}</span>
+                      <h4 className="font-semibold text-lg group-hover/item:text-primary transition-colors">{item.name}</h4>
+                      <span className="text-primary font-bold text-lg group-hover/item:scale-110 transition-transform inline-block">{item.price}</span>
                     </div>
                     <p className="text-muted-foreground text-sm">{item.description}</p>
                   </div>

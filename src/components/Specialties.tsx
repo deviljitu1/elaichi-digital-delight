@@ -41,7 +41,8 @@ const Specialties = () => {
           {specialties.map((specialty, index) => (
             <div
               key={index}
-              className="group rounded-2xl overflow-hidden bg-card border border-border hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]"
+              className="group rounded-2xl overflow-hidden bg-card border border-border hover:shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)] hover-lift cursor-pointer"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative h-64 overflow-hidden">
                 <img

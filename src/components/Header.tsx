@@ -8,7 +8,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -44,10 +44,12 @@ const Header = () => {
           </button>
         </nav>
 
-        <Button variant="hero" size="lg" onClick={() => scrollToSection("contact")}>
-          <Phone className="w-4 h-4" />
-          Book Table
-        </Button>
+        <a href="tel:+917712345678">
+          <Button variant="hero" size="lg" className="hover-scale">
+            <Phone className="w-4 h-4" />
+            Book Table
+          </Button>
+        </a>
       </div>
     </header>
   );
