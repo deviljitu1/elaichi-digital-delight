@@ -68,7 +68,7 @@ const Footer = () => {
             <ul className="space-y-2 text-background/80">
               <li>Near Clock Tower, Civil Lines</li>
               <li>Raipur, Chhattisgarh 492001</li>
-              <li>Phone: +91 771 234 5678</li>
+              <li>Phone: +91 xxx-xxx-xxxx</li>
               <li>Email: info@elaichiraipur.com</li>
             </ul>
           </div>
