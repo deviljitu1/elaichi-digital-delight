@@ -40,7 +40,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-xl mb-2 group-hover:text-primary transition-colors">Phone</h3>
                 <p className="text-muted-foreground group-hover:text-primary transition-colors">+91 771 234 5678</p>
-                <p className="text-muted-foreground">+91 771 234 5679</p>
+                <p className="text-muted-foreground">+91 77x xxx xxxx</p>
               </div>
             </a>
 
@@ -51,7 +51,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-xl mb-2 group-hover:text-primary transition-colors">Email</h3>
                 <p className="text-muted-foreground group-hover:text-primary transition-colors">info@elaichiraipur.com</p>
-                <p className="text-muted-foreground">reservations@elaichiraipur.com</p>
+                <p className="text-muted-foreground">xxxx@elaichiraipur.com</p>
               </div>
             </a>
 
@@ -67,7 +67,7 @@ const Contact = () => {
             </div>
 
             <div className="pt-4">
-              <a href="tel:+917712345678">
+              <a href="tel:+91xxx-xxx-xxxx">
                 <Button variant="hero" size="lg" className="w-full sm:w-auto hover-scale">
                   <Phone className="w-5 h-5" />
                   Call to Reserve
